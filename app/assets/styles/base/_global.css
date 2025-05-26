@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: ;
+}
+
+p {
+    margin: 1em 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.flow-med {
+    margin-bottom: 1.1em;
+}
+
+.flow {
+    margin-bottom: .1em;
+}
+
+.top-flow {
+    margin-top: .7em;
+}
+
+.lotus-img::after {
+    content: "";
+    
+}

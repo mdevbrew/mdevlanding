@@ -1,0 +1,20 @@
+
+.btn {
+   background-color: $goGreen;
+   color: #fff;
+   text-decoration: none;
+   padding: .7rem .9rem;
+   display: inline-block; 
+   border-radius: 100vmax;
+
+   @mixin atLarge {
+    &--large {
+        padding: 1.1rem;
+    
+        @mixin atSmall {
+            font-size: 1.1rem;
+        }
+    }
+}
+}
+
