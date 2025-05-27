@@ -12,6 +12,10 @@
       font-weight: 500;
    }
 
+   &--blue {
+      color: $blueAccent;
+   }
+
    &__icon {
       display: block;
       margin-left: auto;
