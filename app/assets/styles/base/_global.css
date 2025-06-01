@@ -20,11 +20,15 @@ img {
 }
 
 .flow-med {
-    margin-bottom: 1.1em;
+    margin-bottom: .9em;
 }
 
 .flow {
     margin-bottom: .3em;
+}
+
+.no-flow {
+    margin-bottom: 0;
 }
 
 .top-flow {
