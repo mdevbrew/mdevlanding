@@ -14,59 +14,79 @@
         <img src="assets/images/icons/clear-view-escapes.svg">
       </div>
 
-        <div class="site-header__menu-icon">
+      
+    <button id="open-sidebar-button" onclick="openSidebar()" aria-label="open sidebar" aria-expanded="false" aria-controls="navbar">
+        <img src="../image/menu-icon1.png" height="40px" width="40px" alt="">
+    </button>
+
+    <nav id="navbar">
+        <ul>
+            <li><button id="close-sidebar-button" onclick="closeSidebar()" aria-label="close sidebar"><img class="clr-chng" src="../image/close-icon1.png" height="40px" width="40px" alt=""></button></li>
+            <!--<li class="home-li"><a class="active-link" aria-current="page" href="index.html">home</a></li>-->
+            <li><a href="#our-mission">Mission</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+        </ul>
+    </nav>
+
+    <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
+
+
+        <!--<div class="site-header__menu-icon">
 
         </div>
 
           <div class="site-header__menu-content">
             <div class="site-header__btn-container">
             <a href="#" class="btn">Get in Touch</a>
-          </div>
+            </div>
           <nav class="primary-nav primary-nav--pull-right">
             <ul>
-              <li><a href="#our-beginning">Our Beginning</a></li>
+              <li><a href="#our-beginning">Our Mission</a></li>
               <li><a href="#features">Features</a></li>
               <li><a href="#testimonials">Testimonials</a></li>
             </ul>
-          </nav>
+          </nav>-->
       </div>
     </div>
   </header>
 
-  <div class="large-hero flow-med">
-    <picture>
-      <source srcset="assets/images/mdevbrew-imgs/hero--large.jpg" media="(min-width: 1381px)">
+  <div class="large-hero large-hero__btm-brdr flow-med">
+    <picture class="large-hero__image">
+      <source srcset="assets/images/mdevbrew-imgs/hero--large.jpg" class="img-height" media="(min-width: 1381px)"> 
       <source srcset="assets/images/mdevbrew-imgs/hero--medium.jpg" media="(min-width: 976px)">
       <source srcset="assets/images/mdevbrew-imgs/hero--small.jpg" media="(min-width: 604px)">
-      <img src="assets/images/mdevbrew-imgs/hero--smaller.jpg" alt="clouded mountain top" class="large-hero__image">
+      <img src="assets/images/mdevbrew-imgs/hero--smaller.jpg" alt="clouded mountain top">
     </picture>
     <div class="large-hero__text-content">
       <div class="wrapper">
-        <h1 class="large-hero__title no-flow">Retreat Into Nature</h1>
-        <h2 class="large-hero__subtitle flow-med">Step Away From The Matrix</h2>
+        <h1 class="large-hero__title no-flow"> Into Mother Nature</h1>
+  
         <!--
         <p class="large-hero__description flow-med">Take a soul restoring journey to inspire you to be a better you.</p>
         -->
-        <p><a href="#" class="btn btn--blue btn--large">Get Started Today</a></p>
+        <p><a href="#" class="btn btn--blue btn--large lrg-top-mrgn">Get Started Today</a></p>
         
       </div>
     </div>  
   </div>
 
-  <div id="our-beginning" class="page-section lotus-img">
+  <div id="our-mission" class="page-section lotus-img">
     <div class="wrapper wrapper--medium">
     <h2 class="headline headline--center headline--b-margin-small">Rebound Back To <strong> Mother Nature</strong>.</h2>
     <h3 class="headline headline--center headline--blue headline--small headline--narrow headline--b-margin-large">Surrender Your Soul <strong>To The Outdoors</strong>.</h3>
-    <div class="wrapper wrapper--medium wrapper--b-margin">
+    <div class="wrapper wrapper--medium wrapper--b-margin page-section__btm-mrg">
     <img src="assets/images/mdevbrew-imgs/lotus-large.jpg" alt="Lotus covering water.">
+    <span class="img-caption-styling">lotus pedal zen retreat</span>
   </div>
 
   <div class="row row--gutters top-flow">
-      <div class="row__medium-4 row__medium-4--larger flow-med">
+      <div class="row__medium-4 row__medium-4--larger flow-b-mrg">
        <picture>
         <source srcset="assets/images/mdevbrew-imgs/mother-goddess.jpg" media="(min-width: 1020px)">
         <source srcset="assets/images/mdevbrew-imgs/mother-goddess--medium.jpg" media="(min-width: 800px)">
         <img src="assets/images/mdevbrew-imgs/mother-goddess-landscape.jpg" alt="">
+        <span class="img-caption-styling">mother godess zen retreat</span>
        </picture>
       </div>
       <div class="row__medium-8 row__medium-8--smaller">
@@ -74,29 +94,28 @@
         <h2 class="headline flow">Here&rsquo;s how to get started&hellip;</h2>
       <p class="top-flow">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <a href="#">quis nostrud exercitation</a> ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       <p>Duis aute irure dolor in <strong>reprehenderit in</strong> voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum velit esse cillum <strong>dolore eu fugiat.</strong></p>
       </div>
     </div>
   </div>
   </div>
   </div>
 
-  <div id="features" class="page-section page-section--brown">
-    <div class="wrapper">
+  <div id="features" class="page-section--gradient">
+    <div class="wrapper page-section ">
      
-      <h2 class="section-title"> <img class="section-title__icon" src="assets/images/icons/star.svg">Our <strong>Features</strong></h2>
+      <h2 class="section-title section-title__text-shadow"> <img class="section-title__icon" src="assets/images/icons/star.svg">Our <strong>Features</strong></h2>
 
       <div class="row row--gutters-large generic-content-container">
         <div class="row__medium-6">
           <div class="feature-item">
            <img class="feature-item__icon" src="assets/images/icons/rain.svg">
             <h3 class="feature-item__title">We&rsquo;ll Watch the Weather</h3>
-            <p>Download our app and we&rsquo;ll send you a notice if it&rsquo;s about to rain in the next 20 minutes around your current location. A good rain can be refreshing, but sometimes you just want to stay dry.</p>
+            <p>Download our app and we&rsquo;ll send you a notice if it&rsquo;s about to rain in the next 20 minutes around your current location. </p>
           </div>
           <div class="feature-item">
             <img class="feature-item__icon" src="assets/images/icons/globe.svg">
             <h3 class="feature-item__title">Global Guides</h3>
-            <p>We&rsquo;ve scoured the entire planet for the best retreats and beautiful vistas. If there&rsquo;s a corner of the world you want to escape to we know the most scenic and inspiring locations.</p>
+            <p>We&rsquo;ve scoured the entire planet for the best retreats in the most scenic and inspiring locations.</p>
           </div>
         </div>
 
@@ -104,25 +123,26 @@
           <div class="feature-item">
            <img  class="feature-item__icon" src="assets/images/icons/wifi.svg">
             <h3 class="feature-item__title">Wi-Fi Waypoints</h3>
-            <p>We only send you on trips to places we can personally vouch for as being amazing. Which means we&rsquo;ve mapped out where local wi-fi spots are and marked them in our app&rsquo;s map view.</p>
+            <p>We&rsquo;ve mapped out where local wi-fi spots are and marked them in our app&rsquo;s map view just in case you feel the need to connect with someone.</p>
           </div>
           <div class="feature-item">
             <img class="feature-item__icon" src="assets/images/icons/fire.svg">
             <h3 class="feature-item__title">Survival Kit</h3>
-            <p>Everytime you book an escape with us we send you a survival kit with the finest materials. The kit will allow you to setup a tent, start a fire, scratch your own back and lower your taxes.</p>
+            <p>Everytime you book an escape with us we send you a survival kit with everything you will need.</p>
             </div>
         </div>
-      </div>
-    
-     
-     
+      </div> 
     </div>
+  </div>
+
+  <div class="under-construct">
+    <h2 class="headline--center"> new content coming 😋</h2>
   </div>
 
   <div id="testimonials" class="page-section page-section--no-b-padding-until-large page-section--testimonials">
     <div class="wrapper wrapper--no-padding-until-large">
     
-    <h2 class="section-title section-title--blue"><img class="section-title__icon" src="assets/images/icons/comment.svg">Real <strong>Testimonials</strong></h2>
+    <h2 class="section-title section-title--blue"><img class="section-title__icon" src="assets/images/icons/comment.svg"> <strong>Testimonials</strong></h2>
 
       <div class="row row--gutters row--equal-height-at-large row--t-padding generic-content-container">
         <div class="row__large-4">
@@ -132,7 +152,7 @@
             </div>
             <h3 class="testimonial__title">Jane Doe</h3>
             <h4 class="testimonial__subtitle">9 Time Escaper</h4>
-            <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non seen proident, sunt in culpa qui officia.&rdquo;</p>
+            <p>&ldquo; Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. &rdquo;</p>
           </div>
         </div>
 
@@ -143,7 +163,7 @@
             </div>
             <h3 class="testimonial__title">John Smith</h3>
             <h4 class="testimonial__subtitle">4 Time Escaper</h4>
-            <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non seen proident.&rdquo;</p>
+            <p>&ldquo; Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. &rdquo;</p>
           </div>
         </div>
 
@@ -154,7 +174,7 @@
               </div>
               <h3 class="testimonial__title">Cat McKitty</h3>
               <h4 class="testimonial__subtitle">6 Time Escaper</h4>
-              <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non seen proident, sunt in culpa qui officia deserunt.&rdquo;</p>
+              <p>&ldquo; Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. &rdquo;</p>
             </div>
         </div>
       </div>
@@ -163,7 +183,7 @@
 
   <footer class="site-footer">
   <div class="wrapper">
-      <p><span class="site-footer__text"> &copy; 2025 Retreat Into Nature.</span> <a href="#" class="btn">Get in Touch</a></p>
+      <p><span class="site-footer__text"> &copy; 2025 Retreat Into Nature.</span> <a href="#" class="btn btn__btn--footer">Get in Touch</a></p>
   </div>
   </footer>
   <script src="bundled.js"></script>
@@ -187,3 +207,79 @@
   This is the end of the "modal" reference HTML -->
 </body>
 </html>
+
+
+<!--
+
+Chicken Shawarma For Weight Loss v.2 😍
+
+Spice mix for 2-lbs chicken-
+
+2 tsp garlic powder
+1 tsp turmeric
+1 tsp cumin
+1 tsp coriander
+1 tsp allspice
+2 tsp smoked paprika
+1 tsp onion
+1 tsp cardamom
+1/2 tsp clove
+2 tsp salt
+
+
+Chicken Shawarma For Weight Loss v.2.1 😮
+
+Spice mix for 6-lbs chicken-
+
+2 T. garlic powder
+1 T. turmeric
+1 T. cumin
+1 T. coriander
+1 T. allspice
+2 T. smoked paprika
+1 T. onion
+1 T. cardamom
+1 tsp + 1/2 tsp clove
+2 T. salt
+
+Mortadella
+
+Way better than the store bought! Im serious
+
+Ingredients:
+
+- 2 chickens ( 900grams each)
+- 1 onion
+- couple of cloves of garlic
+- bay leaves
+- peppercorns
+- 1 star anise
+- 1 clove
+- 4 cups of water
+- 50 grams of gelatin
+- salt & pepper
+- 1 tsp garlic powder
+- 1 tsp onion powder
+- 1 tsp paprika
+- 1/2 beetroot
+- 1 charcoal
+- 2 tbsps oul
+
+- boil the chicken with the aromatics for 2 hours or till they fall apart.
+
+- debone the chicken and optionally smoke it with the charcoal for 10-15 minutes.
+
+- mix the gelatin with 2 scoops of the chicken stock. The less the better along with the spices.
+
+- grate half of the beetroot. Then add it to the chicken along with the gelatin mix.
+
+- blend it using a blender or a stand mixer for as long as you can. You want the mixture to be as smooth and creamy as possible.
+
+- cut a water bottle from the top. Spray it with some oil then pour the mixture in. Cover then place it in the fridge overnight.
+
+- slice it as thin or thick as you like. Serve it on sandwiches and enjoy.
+
+( it will last up to 7 days in the fridge)
+
+
+-->

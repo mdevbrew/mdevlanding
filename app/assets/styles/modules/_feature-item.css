@@ -1,6 +1,7 @@
 .feature-item {
     position: relative;
     padding-bottom: 1.3rem;
+    text-shadow: 5px 7px 12px $textShadow;
 
     @mixin atSmall {
         padding-left: 95px;
@@ -29,4 +30,12 @@
             font-size: 1.725rem;
         }
     }
+}
+
+.feature-item > p {
+    padding: 0 25px 1.3rem 47px;
+
+     @mixin atSmall {
+           padding: 0 0 1.3rem 0;
+        }
 }

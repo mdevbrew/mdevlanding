@@ -2,14 +2,19 @@
 .btn {
    background-color: $goGreen;
    color: #fff;
+   font-size: .775rem;
    text-decoration: none;
    padding: .7rem .9rem;
    display: inline-block; 
    border-radius: 100vmax;
 
+  &__btn--footer {
+         background-color: rgb(64, 177, 56);
+    }
+
    @mixin atLarge {
     &--large {
-        padding: 1.1rem;
+        padding: 1rem 1.3rem;
     
         @mixin atSmall {
             font-size: 1.1rem;

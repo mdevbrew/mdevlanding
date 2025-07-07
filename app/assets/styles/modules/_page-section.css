@@ -1,5 +1,5 @@
 .page-section {
-    padding: 1rem 0;
+    padding: 1rem 15px 1.7rem;
    
     @mixin atMedium {
         padding: 2.5rem 0;
@@ -21,10 +21,35 @@
         }
     }
 
+    &__btm-mrg {
+        @mixin atLarge {
+            margin-bottom: 5.3rem;
+        }
+    }
+
     &--brown {
         background-color: $mainNeutral;
         color: #fff;
     }
+
+    &--gradient {
+        background:linear-gradient( 55deg, 
+        #e0e6ef,
+        #e0e6ef,
+        $alphaBlue,
+        $mainBlue);
+        padding: 0;
+        position: relative;
+        z-index: -1;
+    }
+
+    /*  
+    
+    $goGreen: rgb(20, 180, 60);
+$alphaBlue: rgba(20, 180, 161, 0.353);
+$mainBlue: rgb(67, 163, 174);
+    
+    */
 
     &--testimonials {
         background-color: #e0e6ef;

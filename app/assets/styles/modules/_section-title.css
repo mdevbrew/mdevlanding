@@ -16,6 +16,10 @@
       color: $blueAccent;
    }
 
+   &__text-shadow {
+      text-shadow: 5px 7px 12px $textShadow;
+   }
+
    &__icon {
       display: block;
       margin-left: auto;

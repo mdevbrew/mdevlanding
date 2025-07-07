@@ -3,13 +3,23 @@
     padding: 10px 0;
     width: 100%;
     z-index: 2;
+
+    &--is-expanded {
+        background-color: rgba(rgb(249, 144, 230));  
+    }
+
+    &__btn-container {
+        display: none;
+    }
     
     @mixin atMedium {
         background-color: $alphaGray;
     }
 
     &__btn-container {
-        float: right;
+        @mixin atMedium {
+            float: right;
+        }   
     }
 
     &__logo {
@@ -37,7 +47,7 @@
        background-color: #fff;
        position: absolute;
        top: 10px;
-       right: 10px; 
+       left: 10px; 
 
        @mixin atMedium {
         display: none;
@@ -46,11 +56,136 @@
 
     &__menu-content {
         display: none;
+        padding-top: 80px;
+        text-align: center;
 
         @mixin atMedium {
+            display: block;
+            padding-top: 0;
+        }
+
+        &--is-visible {
             display: block;
         }
     }
 
 
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Poppins, "Segoe UI", sans-serif;
+    color: var(--text-clr);
+}
+body{
+    min-height: 100vh;
+    min-height: 100vh;
+    //background-color: var(--primary-clr);
+} 
+main{
+    padding: min(5em, 7%);
+}
+main p{
+    margin-top: .35em;
+}
+.clr-chng{
+    color: var(--text-brn);
+}
+nav{
+    background-color: var(--alpha-gray);
+    border-bottom: 1px solid var(--hover-clr);  
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+/*
+nav .home-li{
+    margin-right: auto;
+}
+ */
+nav li{
+    display: flex;
+}
+nav a{
+    display: flex;
+    text-decoration: none;
+    color: var(--text-brn);//color: var(--text-clr);
+    padding: 1em 2em;
+    transition: background-color 150ms ease;
+}
+nav a:hover{
+    background-color: var(--hover-alpha)
+}
+nav a.active-link{
+    border-bottom: 2px solid var(--text-clr)
+}
+nav a.accent-link{
+    background-color: var(--accent-clr);
+}
+#open-sidebar-button{
+    display: none;
+    background: none;
+    border: none;
+    padding: 1em;
+    margin-left: auto;
+    cursor: pointer;
+
+}
+#close-sidebar-button{
+    display: none;
+    background: none;
+    border: none;
+    padding: 1em;
+    cursor: pointer;
+}
+#overlay{
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    inset: 0;
+    z-index: 9;
+    display: none;
+}
+@media screen and (max-width: 792px){
+    #open-sidebar-button, #close-sidebar-button{
+        display: block;
+    }
+    nav{
+        position: fixed;
+        top:0;
+        right: -100%;
+        height: 100vh;
+        width: min(15em, 100%);
+        z-index: 10;
+        border-left: 1px solid var(--hover-clr);
+        transition: right 300ms ease-out;
+    }
+    nav.show{
+        right: 0;
+    }
+    nav.show ~ #overlay{
+        display: block;
+    }
+    nav ul{
+        width: 100%;
+        flex-direction: column;
+    }
+    nav a{
+        width: 100%;
+        padding-left: 2.5em;
+    }
+    nav a.active-link{
+        border-bottom: none;
+    }
+    /*
+    nav .home-li{
+        margin-right: unset;
+    }
+        */
 }
